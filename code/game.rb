@@ -6,8 +6,8 @@ class InputTest < Game
     display.text_font = Font['open-sans.ttf']
     display.text_size = 16
 
-    @keys_pressed = Hash[Keyboard::KEY_MAP.values.map { |k| [k, false] }]
-    @buttons_pressed = Hash[Mouse::BUTTON_MAP.values.map { |k| [k, false] }]
+    @keys_pressed = Hash[Keyboard::KEYS.map { |k| [k, false] }]
+    @buttons_pressed = Hash[Mouse::BUTTONS.map { |k| [k, false] }]
   end
 
   def update(elapsed)
